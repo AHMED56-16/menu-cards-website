@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Menu Application</title>
+</head>
+
+<body>
+    <h1>Our Menu</h1>
+    <hr>
+    <div class="button-group">
+        <button class="button" onclick="fullMenu()">All</button>
+        <button class="button" onclick="specificMenu('breakfast')">Breakfast</button>
+        <button class="button" onclick="specificMenu('shakes')">Shakes</button>
+        <button class="button" onclick="specificMenu('lunch')">Lunch</button>
+    </div>
+    <div class="container mt-4">
+        <div class="row g-3">
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 menu-item breakfast">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Assests/paratha.jpg" class="img-fluid rounded-start" alt="Paratha">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Paratha <span> $3.00</span></h5>
+                                <p class="card-text">A crispy, flaky Pakistani bread, perfect for breakfast. It pairs wonderfully with yogurt, pickles, or a hearty dish, making it a must-try for a satisfying morning meal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 menu-item breakfast">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Assests/pancakes.jpg" class="img-fluid rounded-start" alt="Pancakes">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Pancakes <span> $4.50</span></h5>
+                                <p class="card-text">Fluffy pancakes served with syrup and butter. Topped with your choice of fresh fruit, this dish is perfect for those who love a sweet and satisfying breakfast to start their day.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 menu-item breakfast">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Assests/egg.jpg" class="img-fluid rounded-start" alt="Eggs">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Eggs <span> $2.50</span></h5>
+                                <p class="card-text">Freshly cooked half-fried eggs served with a side of toast or sautéed vegetables. The yolk remains runny, adding a rich flavor to each bite perfect for a hearty breakfast.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 menu-item breakfast">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Assests/halwa-puri.jpg" class="img-fluid rounded-start" alt="Halwa Puri">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Halwa Puri <span> $4.00</span></h5>
+                                <p class="card-text">Traditional Pakistani sweet and savory breakfast dish. The puri is crispy and paired with sweet halwa, making for an irresistible combination that's enjoyed all over the region.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 menu-item shakes">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Assests/banana-shake.jpg" class="img-fluid rounded-start" alt="Banana Shake">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Banana Shake <span> $3.50</span></h5>
+                                <p class="card-text">A delicious banana shake to cool down your day. Made with ripe bananas and creamy milk, it's a satisfying and nutritious drink perfect for any time of the day.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 menu-item shakes">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Assests/stawberry-shake.jpg" class="img-fluid rounded-start" alt="Strawberry Shake">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Strawberry Shake <span> $3.75</span></h5>
+                                <p class="card-text">A refreshing strawberry shake perfect for summer. Made with fresh strawberries and blended with milk and ice cream for a smooth and creamy taste.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 menu-item shakes">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Assests/choclate-shake.jpg" class="img-fluid rounded-start" alt="Chocolate Shake">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Chocolate Shake <span> $4.00</span></h5>
+                                <p class="card-text">Indulge in a rich and creamy chocolate shake. Made with premium cocoa and blended to perfection with milk and ice cream for a luscious, decadent treat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 menu-item shakes">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Assests/mango-lassi.jpg" class="img-fluid rounded-start" alt="Mango Lassi">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Mango Lassi <span> $3.25</span></h5>
+                                <p class="card-text">A sweet and tangy mango drink made with yogurt, blended to create a refreshing drink with a perfect balance of flavor and creaminess.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 menu-item lunch">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Assests/Biryani.webp" class="img-fluid rounded-start" alt="Biryani">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Biryani <span> $6.50</span></h5>
+                                <p class="card-text">A flavorful rice dish with spices and meat. This aromatic meal is perfect for those who love rich and traditional South Asian cuisine.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 menu-item lunch">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Assests/Butter-Chicken.webp" class="img-fluid rounded-start" alt="Butter Chicken">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Butter Chicken <span> $7.00</span></h5>
+                                <p class="card-text">A creamy and rich chicken curry, simmered with spices and served with naan or rice. A favorite among curry lovers, known for its tender chicken and deep flavors.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 menu-item lunch">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Assests/Chicken-Karahi.jpg" class="img-fluid rounded-start" alt="Karahi">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Chicken Karahi <span> $6.00</span></h5>
+                                <p class="card-text">A spicy chicken dish cooked with tomatoes, green chilies, and a blend of aromatic spices. Served hot, this dish is full of flavor and perfect with naan or rice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 menu-item lunch">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./Assests/qorma.jpg" class="img-fluid rounded-start" alt="Qorma">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Qorma <span>$5.00</span></h5>
+                                <p class="card-text">A rich, flavorful curry made with tender meat, aromatic spices, and a rich gravy. It's a dish that captures the essence of traditional Pakistani cuisine.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
